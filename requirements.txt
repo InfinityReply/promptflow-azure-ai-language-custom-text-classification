@@ -1,0 +1,4 @@
+pytest~=8.0.0
+promptflow~=1.5.0
+setuptools~=68.2.2
+requests~=2.31.0
