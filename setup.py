@@ -6,6 +6,7 @@ setup(
     name=PACKAGE_NAME,
     version="0.1.0",
     description="Use Azure AI Language to generate abstractive summaries of documents.",
+    license="MIT",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     packages=find_packages(),
