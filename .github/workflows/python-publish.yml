@@ -29,6 +29,20 @@ jobs:
       with:
         path: ./.venv
         key: venv-${{ hashFiles('poetry.lock') }}
+    - name: Update version
+      run: |
+        TAG_VERSION=$(echo "${{ github.event_name }}" | grep -oE "v[0-9]+\.[0-9]+\.[0-9]+")
+        if [ -n "$TAG_VERSION" ]; then
+          sed -i "s/version = \".*\"/version = \"${TAG_VERSION}\"/" pyproject.toml
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add pyproject.toml
+          git commit -m "Update version to ${TAG_VERSION}"
+          git push
+        else
+          echo "Not a release tag. No version update."
+          exit 1
+        fi
     - name: Build package
       run: poetry build
     - name: Publish package
