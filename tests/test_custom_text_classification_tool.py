@@ -3,7 +3,7 @@ import unittest
 
 from promptflow.connections import CustomConnection
 
-from custom_text_classification_tool.tools.custom_text_classification import classify_text
+from custom_text_classification_tool.tool.custom_text_classification import classify_text
 
 
 @pytest.fixture

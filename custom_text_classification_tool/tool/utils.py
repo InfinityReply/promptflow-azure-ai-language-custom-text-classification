@@ -14,6 +14,6 @@ def collect_tools_from_directory(base_dir) -> dict:
 
 
 def list_package_tools():
-    """List package tools"""
+    """List package tool"""
     yaml_dir = Path(__file__).parents[1] / "yamls"
     return collect_tools_from_directory(yaml_dir)

@@ -2,8 +2,8 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # ---------------------------------------------------------
 import time
-from language_utils.language_skill import LanguageSkill
-from language_utils.language_mode import LanguageMode
+from custom_text_classification_tool.language_utils.language_skill import LanguageSkill
+from custom_text_classification_tool.language_utils.language_mode import LanguageMode
 
 
 # Creates a simple task name given a skill and id.

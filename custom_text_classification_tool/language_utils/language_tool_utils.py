@@ -2,10 +2,10 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # ---------------------------------------------------------
 import requests
-from language_utils.language_skill import LanguageSkill
-from language_utils.language_client import LanguageClient
-from language_utils.language_formatter_utils import format_input
-from language_utils.language_parser_utils import parse_response
+from custom_text_classification_tool.language_utils.language_skill import LanguageSkill
+from custom_text_classification_tool.language_utils.language_client import LanguageClient
+from custom_text_classification_tool.language_utils.language_formatter_utils import format_input
+from custom_text_classification_tool.language_utils.language_parser_utils import parse_response
 
 
 # Run an azure ai language skill given its config.

@@ -1,8 +1,8 @@
 # ---------------------------------------------------------
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # ---------------------------------------------------------
-from language_utils.language_skill import LanguageSkill
-from language_utils.language_mode import LanguageMode
+from custom_text_classification_tool.language_utils.language_skill import LanguageSkill
+from custom_text_classification_tool.language_utils.language_mode import LanguageMode
 
 
 # Obtains 'results' field from an async response with a single task.

@@ -6,7 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/dist" />
       <excludeFolder url="file://$MODULE_DIR$/promptflow_azure_ai_language_custom_text_classification.egg-info" />
     </content>
-    <orderEntry type="jdk" jdkName="promptflow-tools" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Poetry (promptflow-azure-ai-language-custom-text-classification) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

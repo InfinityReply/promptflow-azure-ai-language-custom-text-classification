@@ -17,14 +17,24 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: '3.x'
-    - name: Install dependencies
+        python-version: '3.10'
+    - name: Run image
+      uses: abatilo/actions-poetry@v2
+    - name: Setup a local virtual environment
       run: |
-        python -m pip install --upgrade pip
-        pip install wheel
-        pip install -r requirements.txt
+        poetry config virtualenvs.create true --local
+        poetry config virtualenvs.in-project true --local
+    - uses: actions/cache@v3
+      name: Cache the virtual environment
+      with:
+        path: ./.venv
+        key: venv-${{ hashFiles('poetry.lock') }}
     - name: Build package
-      run: python setup.py sdist bdist_wheel
+      run: poetry build
+    - name: Check package
+      run: |
+        poetry install twine
+        twine check dist/*
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@v1.8.11
       with:

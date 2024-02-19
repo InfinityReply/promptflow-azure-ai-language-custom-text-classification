@@ -25,7 +25,7 @@ custom_text_classification_tool.tools.custom_text_classification.classify_text:
       default: False
       type:
         - bool
-  module: custom_text_classification_tool.tools.custom_text_classification
+  module: custom_text_classification_tool.tool.custom_text_classification
   name: Custom Text Classification
   description: Use Azure AI with a custom text classification model to classify text
   type: python

@@ -5,7 +5,7 @@ import requests
 import os
 import time
 from importlib.metadata import version, PackageNotFoundError
-from language_utils.language_mode import LanguageMode
+from custom_text_classification_tool.language_utils.language_mode import LanguageMode
 
 DEFAULT_TIMEOUT = int(os.environ.get("DEFAULT_TEST_TIMEOUT", "60"))
 PACKAGE = "promptflow-azure-ai-language"

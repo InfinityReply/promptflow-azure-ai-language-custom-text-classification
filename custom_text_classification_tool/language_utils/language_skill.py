@@ -2,7 +2,7 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # ---------------------------------------------------------
 from enum import Enum
-from language_utils.language_mode import LanguageMode
+from custom_text_classification_tool.language_utils.language_mode import LanguageMode
 
 MAX_SYNC_CHARS = 5120
 MAX_ASYNC_CHARS = 125000
