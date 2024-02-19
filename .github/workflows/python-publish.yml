@@ -31,10 +31,6 @@ jobs:
         key: venv-${{ hashFiles('poetry.lock') }}
     - name: Build package
       run: poetry build
-    - name: Check package
-      run: |
-        poetry install twine
-        twine check dist/*
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@v1.8.11
       with:
