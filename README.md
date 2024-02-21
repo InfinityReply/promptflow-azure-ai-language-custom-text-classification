@@ -1,4 +1,8 @@
 # Azure AI Language Custom Text Classification Tool for Prompt Flow
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/InfinityReply/promptflow-azure-ai-language-custom-text-classification/python-publish.yml)
+![PyPI - Version](https://img.shields.io/pypi/v/promptflow-azure-ai-language-custom-text-classification)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/promptflow-azure-ai-language-custom-text-classification)
+
 > Based on [promptflow-azure-ai-language](https://pypi.org/project/promptflow-azure-ai-language/)
 
 | Name                       | Description                                                          |
