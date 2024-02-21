@@ -6,7 +6,8 @@ authors = ["Federico Rapetti <f.rapetti@reply.it>"]
 readme = "README.md"
 license = "MIT"
 packages = [
-    { include = "custom_text_classification_tool", from = "." }
+    { include = "custom_text_classification_tool", from = "." },
+    { include = "tests", from = "." }
 ]
 
 [tool.poetry.dependencies]
@@ -24,4 +25,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-custom_text_classification = "custom_text_classification_tool.tool.utils:list_package_tools"
+custom_text_classification = "custom_text_classification_tool.tools.utils:list_package_tools"
