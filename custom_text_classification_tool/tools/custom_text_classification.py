@@ -1,6 +1,6 @@
 from promptflow import tool
 from promptflow.connections import CustomConnection
-from custom_text_classification_tool.language_utils import LanguageSkill
+from custom_text_classification_tool.language_utils.language_skill import LanguageSkill
 from custom_text_classification_tool.language_utils.language_tool_utils import run_language_skill
 
 API_VERSION = "2022-10-01-preview"
