@@ -1,4 +1,4 @@
-custom_text_classification_tool.tools.custom_text_classification.classify_text:
+custom_text_classification_tool.tool.custom_text_classification.classify_text:
   function: classify_text
   inputs:
     connection:
