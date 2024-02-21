@@ -39,13 +39,8 @@ def get_task_result(results: dict, skill: LanguageSkill):
         print(f"API Result Errors: {errors}")
         return RuntimeError(str(errors))
 
-    # CLU is special case:
-    if skill == LanguageSkill.CONVERSATIONAL_LANGUAGE_UNDERSTANDING:
-        return results["result"]
-    elif LanguageSkill.is_conversational(skill):
+    if LanguageSkill.is_conversational(skill):
         return results["conversations"][0]
-    elif skill == LanguageSkill.TRANSLATION:
-        return results[0]
     else:
         return results["documents"][0]
 

@@ -24,9 +24,7 @@ def format_task(task: dict) -> dict:
 # Function to obtain "analysisInput" field of API input based on skill.
 def analysis_input_func(skill: LanguageSkill):
     # CLU is special case:
-    if skill == LanguageSkill.CONVERSATIONAL_LANGUAGE_UNDERSTANDING:
-        return lambda conv_item: {"conversationItem": conv_item}
-    elif LanguageSkill.is_conversational(skill):
+    if LanguageSkill.is_conversational(skill):
         return lambda conversation: {"conversations": [conversation]}
     else:
         return lambda document: {"documents": [document]}
@@ -34,8 +32,6 @@ def analysis_input_func(skill: LanguageSkill):
 
 # Function to format sync input based on skill.
 def format_sync_func(skill: LanguageSkill):
-    if skill == LanguageSkill.TRANSLATION:
-        return lambda input, _: [input]
     return lambda input, parameters: {
         "kind": LanguageSkill.to_str(skill),
         "analysisInput": analysis_input_func(skill)(input),
