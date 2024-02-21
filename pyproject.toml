@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "promptflow-azure-ai-language-custom-text-classification"
-version = "0.6.0"
+version = "1.0.0"
 description = "Use Azure AI Language to generate abstractive summaries of documents."
 authors = ["Federico Rapetti <f.rapetti@reply.it>"]
 readme = "README.md"
