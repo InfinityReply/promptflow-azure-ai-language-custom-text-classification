@@ -38,4 +38,4 @@ jobs:
     - name: 🛠️ Build package
       run: poetry build
     - name: ☁️ Upload release to PyPI
-      uses: pypa/gh-action-pypi-publish@v1
+      uses: pypa/gh-action-pypi-publish@release/v1
